@@ -1,0 +1,166 @@
+:root {
+  --cor-site: pink;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.maxwidth {
+  max-width: 90em; 
+}
+
+header {
+  text-align: center;
+  margin: auto;
+}
+.headr_logo {
+  width: 5.9em;
+  height: 100px;
+  margin: 1em;
+}
+.headr_nav {
+  background-color: var(--cor-site);
+}
+ul {
+  margin: 0;
+}
+
+.headr_nav_ul {
+  list-style-type: none;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8em;
+}
+
+.headr_nav a{
+  color: aquamarine;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.headr_nav a:hover{
+  background-color: color-mix(in srgb, var (--cor-site) , blueviolet20% )
+}
+
+@media screen and (min-width: 48em) {
+  .headr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headr_logo {
+    margin-bottom: 2em;
+  }
+  .headr_nav {
+    background-color: initial;
+  }
+  .headr_nav_ul {
+    margin-right: 2em;
+    font-size: .9em;
+  }
+  .headr_nav li {
+    display: inline-block;
+  }
+  .headr_nav a {
+    color: var(--cor-site);
+    border-radius: 5px;
+  }
+  .headr_nav a:hover{
+    background-color: color-mix(in srgb, var --cor-site)
+  }
+}
+.trailer {
+  background-color: blue;
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  color: var(--cor-site);
+}
+.trailer div {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+
+.trailer_title {
+  margin-top: 0;
+  padding-left: .5em;
+  color: var(--cor-site);
+}
+.trailer h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+
+}
+.trailer_paragrafo {
+  font-size: 1.1em;
+}
+.trailer_botão {
+  display: inline-block;
+  margin-top: 1em;
+  padding:  2em;
+  background-color: var(--cor-site);
+  text-decoration: none;
+  text-transform: uppercase ;
+}
+.trailer_botão:hover{
+background-color: color-mix(in srgb,var(--cor-site), green 20%);
+}
+
+
+@media screen and (mix-width:48em) {
+  .trailer {
+    background-image:url();
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: initial;
+  }
+  .trailer_paragrafo {
+    margin-bottom: 2em;
+  } 
+}
+  
+.main_content{
+  background-color: aqua;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 80%;
+}
+
+.main_content div {
+  margin: auto;
+  padding: 1em;
+  width: 80%;
+}
+.main_content_title {
+  color: color-mix(in srgb, var (--cor-site));
+}
+.icon_img {
+  width: 5.5px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.col{
+  flex: 1 0 auto;
+  width: 100%;
+}
+.col-12{
+  width: 100%;
+}
+@media screen and (min-width: 48em) {
+  .col-6 {
+    width: calc(50% - 2rem);
+  }
+}
+footer {
+  background-color: blanchedalmond;
+  padding: 1em;
+  text-align: center;
+}
+  
