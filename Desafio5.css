@@ -1,5 +1,5 @@
 :root {
-  --cor-site: pink;
+  --cor-site: #F5888D;
 }
 
 html {
@@ -8,24 +8,31 @@ html {
 .maxwidth {
   max-width: 90em; 
 }
+body {
+  background-color:#9ADFBB ;
+}
 
 header {
   text-align: center;
   margin: auto;
+
 }
+
 .headr_logo {
   width: 5.9em;
   height: 100px;
   margin: 1em;
 }
+
 .headr_nav {
   background-color: var(--cor-site);
 }
+
 ul {
   margin: 0;
 }
 
-.headr_nav_ul {
+.headr_nav ul {
   list-style-type: none;
   padding: 0;
   text-transform: uppercase;
@@ -34,14 +41,14 @@ ul {
 }
 
 .headr_nav a{
-  color: aquamarine;
+  color: #AEB38B;
   text-decoration: none;
   display: block;
   padding: 1em;
 }
 
 .headr_nav a:hover{
-  background-color: color-mix(in srgb, var (--cor-site) , blueviolet20% )
+  background-color: color-mix(in srgb, var(--cor-site) , #F422E4 80% )
 }
 
 @media screen and (min-width: 48em) {
@@ -51,12 +58,12 @@ ul {
     align-items: center;
   }
   .headr_logo {
-    margin-bottom: 2em;
+    margin-left: 2em;
   }
   .headr_nav {
     background-color: initial;
   }
-  .headr_nav_ul {
+  .headr_nav ul {
     margin-right: 2em;
     font-size: .9em;
   }
@@ -68,15 +75,19 @@ ul {
     border-radius: 5px;
   }
   .headr_nav a:hover{
-    background-color: color-mix(in srgb, var --cor-site)
+    background-color: color-mix(in srgb,var(--cor-site), #F422E4 80%);
   }
 }
+
 .trailer {
-  background-color: blue;
+  background-color:#CCDFBB ;
   padding-bottom: 1.5em;
   padding-left: 1em;
-  color: var(--cor-site);
+  padding-right: 1em;
+  line-height: 1.5em;
+  
 }
+
 .trailer div {
   text-align: center;
   margin: auto;
@@ -85,9 +96,10 @@ ul {
 
 .trailer_title {
   margin-top: 0;
-  padding-left: .5em;
+  padding-top: .5em;
   color: var(--cor-site);
 }
+
 .trailer h1 {
   font-size: 2em;
   margin-bottom: 1em;
@@ -96,38 +108,42 @@ ul {
 .trailer_paragrafo {
   font-size: 1.1em;
 }
+
 .trailer_botão {
   display: inline-block;
   margin-top: 1em;
-  padding:  2em;
+  padding:  1em 2em;
   background-color: var(--cor-site);
+  border-radius: 8px;
   text-decoration: none;
+  color: brown;
   text-transform: uppercase ;
 }
+
 .trailer_botão:hover{
-background-color: color-mix(in srgb,var(--cor-site), green 20%);
+background-color: color-mix(in srgb,var(--cor-site), #F422E4 80%);
 }
 
 
-@media screen and (mix-width:48em) {
+@media screen and (min-width:48em) {
   .trailer {
-    background-image:url();
+    background-image:url(imagem/marianna-lutkova-4PSLAKVQQ88-unsplash.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: initial;
   }
+
   .trailer_paragrafo {
     margin-bottom: 2em;
   } 
 }
   
 .main_content{
-  background-color: aqua;
+  background-color:#9ADFBB ;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
-  width: 80%;
 }
 
 .main_content div {
@@ -136,7 +152,7 @@ background-color: color-mix(in srgb,var(--cor-site), green 20%);
   width: 80%;
 }
 .main_content_title {
-  color: color-mix(in srgb, var (--cor-site));
+  color: var(--cor-site)
 }
 .icon_img {
   width: 5.5px;
@@ -154,12 +170,12 @@ background-color: color-mix(in srgb,var(--cor-site), green 20%);
   width: 100%;
 }
 @media screen and (min-width: 48em) {
-  .col-6 {
-    width: calc(50% - 2rem);
-  }
+  .col-6(width: calc(50% - 2rem);
+    }
 }
+
 footer {
-  background-color: blanchedalmond;
+  background-color: var(--cor-site);
   padding: 1em;
   text-align: center;
 }
