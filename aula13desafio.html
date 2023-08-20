@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aula13desafio.css">
+    <link rel="normalize">
+    <title>bicycle space</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <header class="header">
+              <img src="imagem/bcy150px.jpg" alt="icon_bicycle" class="header_logo"></img>
+              <span id="hamburguer" class="material-symbols-rounded">menu</span>
+                 <nav id="itens_menu" class="header_nav">
+                    <ul>
+                             <li><a href="#">Menu 01</a></li>
+                             <li><a href="#">Menu 02</a></li>
+                             <li><a href="#">Menu 03</a></li>
+                             <li><a href="#">Menu 04</a></li>
+                    </ul>
+                </nav>
+        </header>
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itensMenu = document.getElementById('itens_menu');
+
+        hamburguer.addEventListener('click', aparecer);
+        
+        function aparecer(){
+            if (itens_menu.style.display == 'block'){
+                itensMenu.classList.remove('show');
+            } else {
+                itensMenu.classList.toggle('show');
+            }
+        }
+    </script>  
+
+    <main>
+        <div id="div_img_main" class="imagem">
+            <img src="imagem/marianna-lutkova-4PSLAKVQQ88-950px.jpg" alt="">
+        </div>
+    </main>
+    <footer>
+        <ul class="midias_footer">
+            <li></li>
+            <img src="imagem/facebook25px.png" alt="">
+            <li></li>
+            <img src="imagem/instagram-logo_25px.png" alt="">
+            <li></li>
+            <img src="imagem/mail_25px.png" alt="">
+            <li></li>
+            <img src="imagem/chat-bubble_25px.png" alt="">
+            <li></li>
+            <img src="imagem/github25px.png" alt="">
+        </ul>
+        <h3 class="midias_footer">Elas na Tech 2023 ♥</h3>
+    </footer>
+    
+ 
+</body>
+
+</html>
